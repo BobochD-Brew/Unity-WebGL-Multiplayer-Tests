@@ -17,6 +17,11 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Test Clone</div>
+      </div>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -53,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL Build.data.gz",
-        frameworkUrl: buildUrl + "/WebGL Build.framework.js.gz",
-        codeUrl: buildUrl + "/WebGL Build.wasm.gz",
+        dataUrl: buildUrl + "/WebGL Build.data",
+        frameworkUrl: buildUrl + "/WebGL Build.framework.js",
+        codeUrl: buildUrl + "/WebGL Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Test Clone",
